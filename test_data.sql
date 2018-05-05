@@ -1,5 +1,5 @@
 -- dodawanie danych do tabeli STATUS (ID_Status, Nazwa (VARCHAR))
-INSERT INTO STATUS(Nazwa)
+INSERT INTO STATUS_Z(Nazwa)
 VALUES 
 	('Przyjety do naprawy'),
 	('W trakcie naprawy'),
@@ -22,7 +22,7 @@ VALUES
 	('Jan', 'Nowak', '501234567'),
 	('Adam', 'Kowalski', '502345678'),
 	('Hanna', 'Maciąg', '503333333'),
-	('Danuta', 'Grzywacz' '601234567'),
+	('Danuta', 'Grzywacz', '601234567'),
 	('Karol', 'Karupski', '500123123');
 
 INSERT INTO KLIENT(Imie, Nazwisko, Telefon, Email)
@@ -39,7 +39,7 @@ VALUES
 	('Paweł', 'Piotrowiczowski', '504405504', 'p.piotrowicowski@wp.pl'),
 	('Michał', 'Gabryjelski', '600599601', 'mg.master@pogo.org'),
 	('Karol', 'Pawłowicz', '512341212', 'karol_p@kp.pk'),
-	('Karolina', 'Pawłowa', '515456433', 'karolinka.buziaczek.br'),
+	('Karolina', 'Pawłowa', '515456433', 'karolinka@buziaczek.br'),
 	('Sławomira', 'Iksamowicz', '555666755', 's.iksa@wp.pl');
 
 -- RODZAJ_ID_Rodzaj, SerialNumber, Producent,
@@ -65,10 +65,10 @@ VALUES
 	(4, '87242984FFA', 'XiaoXin'),
 	(1, '789274924', 'Inspiron');
 
---SPRZET_ID_Sprzet, KLIENT_ID_Klient,
---STATUS_Z_ID_Status, PRACOWNIK_ID_Pracownik_Przyjmujacy,
---PRACOWNIK_ID_Pracownik_Wydajacy, Data_Przyjecia,
---Data_Wydania, Opis VARCHAR,
+-- SPRZET_ID_Sprzet, KLIENT_ID_Klient,
+-- STATUS_Z_ID_Status, PRACOWNIK_ID_Pracownik_Przyjmujacy,
+-- PRACOWNIK_ID_Pracownik_Wydajacy, Data_Przyjecia,
+-- Data_Wydania, Opis VARCHAR,
 INSERT INTO ZGLOSZENIE(SPRZET_ID_Sprzet, KLIENT_ID_Klient, STATUS_Z_ID_Status, 
 	PRACOWNIK_ID_Pracownik_Przyjmujacy, PRACOWNIK_ID_Pracownik_Wydajacy,
 	Data_Przyjecia, Data_Wydania, Opis)
