@@ -5,6 +5,11 @@ VALUES
 	('W trakcie naprawy'),
 	('Towar oddany');
 
+INSERT INTO UZYTKOWNIK(Email, Haslo, Rola)
+VALUES
+	('admin@admin.pl', '12345', 'admin'),
+	('user@user.pl', '12345', 'user');
+
 INSERT INTO RODZAJ(Nazwa)
 VALUES 
 	('Komputer PC'),
