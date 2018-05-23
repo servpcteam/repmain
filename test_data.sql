@@ -5,11 +5,6 @@ VALUES
 	('W trakcie naprawy'),
 	('Towar oddany');
 
-INSERT INTO UZYTKOWNIK(Email, Haslo, Rola)
-VALUES
-	('admin@admin.pl', '12345', 'admin'),
-	('user@user.pl', '12345', 'user');
-
 INSERT INTO RODZAJ(Nazwa)
 VALUES 
 	('Komputer PC'),
@@ -30,22 +25,24 @@ VALUES
 	('Danuta', 'Grzywacz', '601234567'),
 	('Karol', 'Karupski', '500123123');
 
-INSERT INTO KLIENT(Imie, Nazwisko, Telefon, Email)
+INSERT INTO KLIENT(Imie, Nazwisko, Telefon, Email, Haslo, Rola)
 VALUES
-	('Janusz', 'Tracz', '503503503', 'jtracz@tlen.pl'),
-	('Janina', 'Walewska', '500501502', 'janina@janina.org'),
-	('Adam', 'Nowak', '500050005', 'adamek@op.com'),
-	('Karol', 'Nowak', '500005000', 'nowak@nowak.gov'),
-	('Janusz', 'Januszewski', '600678678', 'costam@cos.tam'),
-	('Wojciech', 'Marecki', '699600655', 'marecki@wojciech.pl'),
-	('Tomasz', 'Tymaszewski', '500600700', 'tomasz@tomasz.to'),
-	('Marta', 'Dorszewska', '698697696', 'martusia@kart.ko'),
-	('Anna', 'Hanuszewska', '501502503', 'a.hanuszewska@korpo.pl'),
-	('Paweł', 'Piotrowiczowski', '504405504', 'p.piotrowicowski@wp.pl'),
-	('Michał', 'Gabryjelski', '600599601', 'mg.master@pogo.org'),
-	('Karol', 'Pawłowicz', '512341212', 'karol_p@kp.pk'),
-	('Karolina', 'Pawłowa', '515456433', 'karolinka@buziaczek.br'),
-	('Sławomira', 'Iksamowicz', '555666755', 's.iksa@wp.pl');
+	('Admin', 'Admin', '666666666', 'admin@admin.pl', '12345', 'admin'),
+	('Janusz', 'Tracz', '503503503', 'jtracz@tlen.pl', '12345', 'admin'),
+	('User1', 'User1', '111111111', 'user@user.pl', '12345', 'user'),
+	('Janina', 'Walewska', '500501502', 'janina@janina.org', '12345', 'user'),
+	('Adam', 'Nowak', '500050005', 'adamek@op.com', '12345', 'user'),
+	('Karol', 'Nowak', '500005000', 'nowak@nowak.gov', '12345', 'user'),
+	('Janusz', 'Januszewski', '600678678', 'costam@cos.tam', '12345', 'user'),
+	('Wojciech', 'Marecki', '699600655', 'marecki@wojciech.pl', '12345', 'user'),
+	('Tomasz', 'Tymaszewski', '500600700', 'tomasz@tomasz.to', '12345', 'user'),
+	('Marta', 'Dorszewska', '698697696', 'martusia@kart.ko', '12345', 'user'),
+	('Anna', 'Hanuszewska', '501502503', 'a.hanuszewska@korpo.pl', '12345', 'user'),
+	('Paweł', 'Piotrowiczowski', '504405504', 'p.piotrowicowski@wp.pl', '12345', 'user'),
+	('Michał', 'Gabryjelski', '600599601', 'mg.master@pogo.org', '12345', 'user'),
+	('Karol', 'Pawłowicz', '512341212', 'karol_p@kp.pk', '12345', 'user'),
+	('Karolina', 'Pawłowa', '515456433', 'karolinka@buziaczek.br', '12345', 'user'),
+	('Sławomira', 'Iksamowicz', '555666755', 's.iksa@wp.pl', '12345', 'user');
 
 -- RODZAJ_ID_Rodzaj, SerialNumber, Producent,
 INSERT INTO SPRZET(RODZAJ_ID_Rodzaj, SerialNumber, Producent)
