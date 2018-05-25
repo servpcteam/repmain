@@ -25,24 +25,25 @@ VALUES
 	('Danuta', 'Grzywacz', '601234567'),
 	('Karol', 'Karupski', '500123123');
 
+-- zahashowane haslo dla wszystkich kont 12345
 INSERT INTO KLIENT(Imie, Nazwisko, Telefon, Email, Haslo, Rola)
 VALUES
-	('Admin', 'Admin', '666666666', 'admin@admin.pl', '12345', 'admin'),
-	('Janusz', 'Tracz', '503503503', 'jtracz@tlen.pl', '12345', 'admin'),
-	('User1', 'User1', '111111111', 'user@user.pl', '12345', 'user'),
-	('Janina', 'Walewska', '500501502', 'janina@janina.org', '12345', 'user'),
-	('Adam', 'Nowak', '500050005', 'adamek@op.com', '12345', 'user'),
-	('Karol', 'Nowak', '500005000', 'nowak@nowak.gov', '12345', 'user'),
-	('Janusz', 'Januszewski', '600678678', 'costam@cos.tam', '12345', 'user'),
-	('Wojciech', 'Marecki', '699600655', 'marecki@wojciech.pl', '12345', 'user'),
-	('Tomasz', 'Tymaszewski', '500600700', 'tomasz@tomasz.to', '12345', 'user'),
-	('Marta', 'Dorszewska', '698697696', 'martusia@kart.ko', '12345', 'user'),
-	('Anna', 'Hanuszewska', '501502503', 'a.hanuszewska@korpo.pl', '12345', 'user'),
-	('Paweł', 'Piotrowiczowski', '504405504', 'p.piotrowicowski@wp.pl', '12345', 'user'),
-	('Michał', 'Gabryjelski', '600599601', 'mg.master@pogo.org', '12345', 'user'),
-	('Karol', 'Pawłowicz', '512341212', 'karol_p@kp.pk', '12345', 'user'),
-	('Karolina', 'Pawłowa', '515456433', 'karolinka@buziaczek.br', '12345', 'user'),
-	('Sławomira', 'Iksamowicz', '555666755', 's.iksa@wp.pl', '12345', 'user');
+	('Admin', 'Admin', '666666666', 'admin@admin.pl', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'admin'),
+	('Janusz', 'Tracz', '503503503', 'jtracz@tlen.pl', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'admin'),
+	('User1', 'User1', '111111111', 'user@user.pl', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Janina', 'Walewska', '500501502', 'janina@janina.org', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Adam', 'Nowak', '500050005', 'adamek@op.com', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Karol', 'Nowak', '500005000', 'nowak@nowak.gov', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Janusz', 'Januszewski', '600678678', 'costam@cos.tam', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Wojciech', 'Marecki', '699600655', 'marecki@wojciech.pl', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Tomasz', 'Tymaszewski', '500600700', 'tomasz@tomasz.to', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Marta', 'Dorszewska', '698697696', 'martusia@kart.ko', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Anna', 'Hanuszewska', '501502503', 'a.hanuszewska@korpo.pl', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Paweł', 'Piotrowiczowski', '504405504', 'p.piotrowicowski@wp.pl', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Michał', 'Gabryjelski', '600599601', 'mg.master@pogo.org', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Karol', 'Pawłowicz', '512341212', 'karol_p@kp.pk', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Karolina', 'Pawłowa', '515456433', 'karolinka@buziaczek.br', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user'),
+	('Sławomira', 'Iksamowicz', '555666755', 's.iksa@wp.pl', '$2y$10$1RD2n8wu71QCBDDZ7gVVNe9lDrGqs1nFqOrLUBDbcE8dj9EPTz.5a', 'user');
 
 -- RODZAJ_ID_Rodzaj, SerialNumber, Producent,
 INSERT INTO SPRZET(RODZAJ_ID_Rodzaj, SerialNumber, Producent)
