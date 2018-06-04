@@ -1,5 +1,5 @@
--- dodawanie danych do tabeli STATUS (ID_Status, Nazwa (VARCHAR))
-INSERT INTO STATUS_Z(Nazwa)
+-- dodawanie danych do tabeli STATUS (ID_Status, Status (VARCHAR))
+INSERT INTO STATUS_Z(Status)
 VALUES 
 	('Przyjety do naprawy'),
 	('W trakcie naprawy'),
